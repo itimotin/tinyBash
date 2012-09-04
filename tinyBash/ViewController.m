@@ -41,12 +41,13 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  [[UIApplication sharedApplication] setStatusBarHidden:YES
+                                          withAnimation:UIStatusBarAnimationNone];
   ViewController *this = self;
   [tableView addPullToRefreshWithActionHandler:^{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
       [this fetchRss];
     });
-
   }];
   [tableView.pullToRefreshView triggerRefresh];
 }
@@ -80,6 +81,8 @@
   for (GDataXMLNode *descNode in itemNodes) {
     [items addObject:descNode.stringValue.gtm_stringByUnescapingFromHTML.brToNewline];
   }
+  [[UIApplication sharedApplication] setStatusBarHidden:YES
+                                          withAnimation:UIStatusBarAnimationNone];
   [tableView reloadData];
   [tableView.pullToRefreshView stopAnimating];
 }
@@ -139,6 +142,8 @@
 
 - (void)loadFailure
 {
+  [[UIApplication sharedApplication] setStatusBarHidden:NO
+                                          withAnimation:UIStatusBarAnimationNone];
   [tableView.pullToRefreshView stopAnimating];
   [SVProgressHUD showErrorWithStatus:@"network error" duration:10.0f];
 }
