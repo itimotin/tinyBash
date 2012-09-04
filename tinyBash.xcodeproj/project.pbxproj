@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6576D8E15F5F384006BF24F /* bash57.png in Resources */ = {isa = PBXBuildFile; fileRef = B6576D8D15F5F384006BF24F /* bash57.png */; };
+		B6576D9515F5F3DC006BF24F /* bash72.png in Resources */ = {isa = PBXBuildFile; fileRef = B6576D9415F5F3DC006BF24F /* bash72.png */; };
+		B6576D9715F5F434006BF24F /* bash144.png in Resources */ = {isa = PBXBuildFile; fileRef = B6576D9615F5F434006BF24F /* bash144.png */; };
+		B65A67DA15F5D05E0039318C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65A67D915F5D05E0039318C /* UIKit.framework */; };
+		B65A67DC15F5D05E0039318C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65A67DB15F5D05E0039318C /* Foundation.framework */; };
+		B65A67DE15F5D05E0039318C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65A67DD15F5D05E0039318C /* CoreGraphics.framework */; };
+		B65A67E415F5D05E0039318C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B65A67E215F5D05E0039318C /* InfoPlist.strings */; };
+		B65A67E615F5D05E0039318C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B65A67E515F5D05E0039318C /* main.m */; };
+		B65A67EA15F5D05E0039318C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B65A67E915F5D05E0039318C /* AppDelegate.m */; };
+		B65A67ED15F5D05E0039318C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65A67EC15F5D05E0039318C /* ViewController.m */; };
+		B65A67F015F5D05E0039318C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B65A67EE15F5D05E0039318C /* ViewController.xib */; };
+		B65A67F715F5D1410039318C /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B65A67F615F5D1410039318C /* libxml2.dylib */; };
+		B65A67FA15F5D3610039318C /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B65A67F815F5D3610039318C /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B66E7F4415F5DF6F00D71B25 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = B66E7F4215F5DF6F00D71B25 /* NSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B66E7F4B15F5E06600D71B25 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = B66E7F4915F5E06600D71B25 /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B66E7F4D15F5E5B700D71B25 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B66E7F4C15F5E5B700D71B25 /* Ubuntu-Light.ttf */; };
+		B66E7F5315F5EE0800D71B25 /* bash.png in Resources */ = {isa = PBXBuildFile; fileRef = B66E7F5215F5EE0800D71B25 /* bash.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B6576D8D15F5F384006BF24F /* bash57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bash57.png; path = ../bash57.png; sourceTree = "<group>"; };
+		B6576D9415F5F3DC006BF24F /* bash72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bash72.png; path = ../bash72.png; sourceTree = "<group>"; };
+		B6576D9615F5F434006BF24F /* bash144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bash144.png; sourceTree = SOURCE_ROOT; };
+		B65A67D515F5D05E0039318C /* tinyBash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tinyBash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B65A67D915F5D05E0039318C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B65A67DB15F5D05E0039318C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B65A67DD15F5D05E0039318C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B65A67E115F5D05E0039318C /* tinyBash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tinyBash-Info.plist"; sourceTree = "<group>"; };
+		B65A67E315F5D05E0039318C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B65A67E515F5D05E0039318C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B65A67E715F5D05E0039318C /* tinyBash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tinyBash-Prefix.pch"; sourceTree = "<group>"; };
+		B65A67E815F5D05E0039318C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B65A67E915F5D05E0039318C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B65A67EB15F5D05E0039318C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B65A67EC15F5D05E0039318C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B65A67EF15F5D05E0039318C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		B65A67F615F5D1410039318C /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		B65A67F815F5D3610039318C /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		B65A67F915F5D3610039318C /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		B66E7F4215F5DF6F00D71B25 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
+		B66E7F4315F5DF6F00D71B25 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		B66E7F4915F5E06600D71B25 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		B66E7F4A15F5E06600D71B25 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		B66E7F4C15F5E5B700D71B25 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		B66E7F5215F5EE0800D71B25 /* bash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bash.png; path = ../bash.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B65A67D215F5D05E0039318C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B65A67F715F5D1410039318C /* libxml2.dylib in Frameworks */,
+				B65A67DA15F5D05E0039318C /* UIKit.framework in Frameworks */,
+				B65A67DC15F5D05E0039318C /* Foundation.framework in Frameworks */,
+				B65A67DE15F5D05E0039318C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B65A67CA15F5D05E0039318C = {
+			isa = PBXGroup;
+			children = (
+				B65A67DF15F5D05E0039318C /* tinyBash */,
+				B65A67D815F5D05E0039318C /* Frameworks */,
+				B65A67D615F5D05E0039318C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B65A67D615F5D05E0039318C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B65A67D515F5D05E0039318C /* tinyBash.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B65A67D815F5D05E0039318C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B65A67F615F5D1410039318C /* libxml2.dylib */,
+				B65A67D915F5D05E0039318C /* UIKit.framework */,
+				B65A67DB15F5D05E0039318C /* Foundation.framework */,
+				B65A67DD15F5D05E0039318C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B65A67DF15F5D05E0039318C /* tinyBash */ = {
+			isa = PBXGroup;
+			children = (
+				B66E7F4915F5E06600D71B25 /* GTMNSString+HTML.m */,
+				B66E7F4A15F5E06600D71B25 /* GTMNSString+HTML.h */,
+				B66E7F4215F5DF6F00D71B25 /* NSString+HTML.m */,
+				B66E7F4315F5DF6F00D71B25 /* NSString+HTML.h */,
+				B65A67F815F5D3610039318C /* GDataXMLNode.m */,
+				B65A67F915F5D3610039318C /* GDataXMLNode.h */,
+				B65A67E815F5D05E0039318C /* AppDelegate.h */,
+				B65A67E915F5D05E0039318C /* AppDelegate.m */,
+				B65A67EB15F5D05E0039318C /* ViewController.h */,
+				B65A67EC15F5D05E0039318C /* ViewController.m */,
+				B65A67EE15F5D05E0039318C /* ViewController.xib */,
+				B65A67E015F5D05E0039318C /* Supporting Files */,
+			);
+			path = tinyBash;
+			sourceTree = "<group>";
+		};
+		B65A67E015F5D05E0039318C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B66E7F5215F5EE0800D71B25 /* bash.png */,
+				B6576D9415F5F3DC006BF24F /* bash72.png */,
+				B6576D8D15F5F384006BF24F /* bash57.png */,
+				B6576D9615F5F434006BF24F /* bash144.png */,
+				B66E7F4C15F5E5B700D71B25 /* Ubuntu-Light.ttf */,
+				B65A67E115F5D05E0039318C /* tinyBash-Info.plist */,
+				B65A67E215F5D05E0039318C /* InfoPlist.strings */,
+				B65A67E515F5D05E0039318C /* main.m */,
+				B65A67E715F5D05E0039318C /* tinyBash-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B65A67D415F5D05E0039318C /* tinyBash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B65A67F315F5D05E0039318C /* Build configuration list for PBXNativeTarget "tinyBash" */;
+			buildPhases = (
+				B65A67D115F5D05E0039318C /* Sources */,
+				B65A67D215F5D05E0039318C /* Frameworks */,
+				B65A67D315F5D05E0039318C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tinyBash;
+			productName = tinyBash;
+			productReference = B65A67D515F5D05E0039318C /* tinyBash.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B65A67CC15F5D05E0039318C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Viktor Kotseruba";
+			};
+			buildConfigurationList = B65A67CF15F5D05E0039318C /* Build configuration list for PBXProject "tinyBash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B65A67CA15F5D05E0039318C;
+			productRefGroup = B65A67D615F5D05E0039318C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B65A67D415F5D05E0039318C /* tinyBash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B65A67D315F5D05E0039318C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B65A67E415F5D05E0039318C /* InfoPlist.strings in Resources */,
+				B65A67F015F5D05E0039318C /* ViewController.xib in Resources */,
+				B66E7F4D15F5E5B700D71B25 /* Ubuntu-Light.ttf in Resources */,
+				B66E7F5315F5EE0800D71B25 /* bash.png in Resources */,
+				B6576D8E15F5F384006BF24F /* bash57.png in Resources */,
+				B6576D9515F5F3DC006BF24F /* bash72.png in Resources */,
+				B6576D9715F5F434006BF24F /* bash144.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B65A67D115F5D05E0039318C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B65A67E615F5D05E0039318C /* main.m in Sources */,
+				B65A67EA15F5D05E0039318C /* AppDelegate.m in Sources */,
+				B65A67ED15F5D05E0039318C /* ViewController.m in Sources */,
+				B65A67FA15F5D3610039318C /* GDataXMLNode.m in Sources */,
+				B66E7F4415F5DF6F00D71B25 /* NSString+HTML.m in Sources */,
+				B66E7F4B15F5E06600D71B25 /* GTMNSString+HTML.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B65A67E215F5D05E0039318C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B65A67E315F5D05E0039318C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B65A67EE15F5D05E0039318C /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B65A67EF15F5D05E0039318C /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B65A67F115F5D05E0039318C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B65A67F215F5D05E0039318C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B65A67F415F5D05E0039318C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tinyBash/tinyBash-Prefix.pch";
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				INFOPLIST_FILE = "tinyBash/tinyBash-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B65A67F515F5D05E0039318C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tinyBash/tinyBash-Prefix.pch";
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				INFOPLIST_FILE = "tinyBash/tinyBash-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B65A67CF15F5D05E0039318C /* Build configuration list for PBXProject "tinyBash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B65A67F115F5D05E0039318C /* Debug */,
+				B65A67F215F5D05E0039318C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B65A67F315F5D05E0039318C /* Build configuration list for PBXNativeTarget "tinyBash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B65A67F415F5D05E0039318C /* Debug */,
+				B65A67F515F5D05E0039318C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B65A67CC15F5D05E0039318C /* Project object */;
+}
