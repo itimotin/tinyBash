@@ -32,7 +32,6 @@
 - (CGSize)sizeForText:(NSString*)text;
 - (UIFont*)labelFont;
 - (void)loadFailure;
-- (void)queueRefresh;
 
 @end
 
@@ -44,7 +43,10 @@
   [super viewDidLoad];
   ViewController *this = self;
   [tableView addPullToRefreshWithActionHandler:^{
-    [this queueRefresh];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+      [this fetchRss];
+    });
+
   }];
   [tableView.pullToRefreshView triggerRefresh];
 }
@@ -57,16 +59,6 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
   return interfaceOrientation == UIInterfaceOrientationPortrait;
-}
-
-- (void)queueRefresh
-{
-  NSOperationQueue *queue = [NSOperationQueue new];
-  NSInvocationOperation *load = [[NSInvocationOperation alloc]
-                                 initWithTarget:self
-                                 selector:@selector(fetchRss)
-                                 object:nil];
-  [queue addOperation:load];
 }
 
 - (void)fetchRss
