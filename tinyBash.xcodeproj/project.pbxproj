@@ -49,6 +49,7 @@
 		B6ACA82515F6267100E578EB /* Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-57.png"; sourceTree = SOURCE_ROOT; };
 		B6ACA82615F6267100E578EB /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-144.png"; sourceTree = SOURCE_ROOT; };
 		B6ACA82715F6267100E578EB /* Icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-114.png"; sourceTree = SOURCE_ROOT; };
+		B6ACA82C15F6332800E578EB /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +101,7 @@
 		B65A67DF15F5D05E0039318C /* tinyBash */ = {
 			isa = PBXGroup;
 			children = (
-				B66E7F4915F5E06600D71B25 /* GTMNSString+HTML.m */,
-				B66E7F4A15F5E06600D71B25 /* GTMNSString+HTML.h */,
+				B6ACA82C15F6332800E578EB /* config.h */,
 				B65A67E815F5D05E0039318C /* AppDelegate.h */,
 				B65A67E915F5D05E0039318C /* AppDelegate.m */,
 				B65A67EB15F5D05E0039318C /* ViewController.h */,
@@ -115,6 +115,8 @@
 		B65A67E015F5D05E0039318C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B66E7F4915F5E06600D71B25 /* GTMNSString+HTML.m */,
+				B66E7F4A15F5E06600D71B25 /* GTMNSString+HTML.h */,
 				B6ACA82415F6267100E578EB /* Icon-72.png */,
 				B6ACA82515F6267100E578EB /* Icon-57.png */,
 				B6ACA82615F6267100E578EB /* Icon-144.png */,
