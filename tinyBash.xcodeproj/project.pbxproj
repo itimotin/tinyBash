@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		356BA182436B455ABE78C845 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A15282C83FB149B28A5372F1 /* libPods.a */; };
 		B6576D8E15F5F384006BF24F /* bash57.png in Resources */ = {isa = PBXBuildFile; fileRef = B6576D8D15F5F384006BF24F /* bash57.png */; };
 		B6576D9515F5F3DC006BF24F /* bash72.png in Resources */ = {isa = PBXBuildFile; fileRef = B6576D9415F5F3DC006BF24F /* bash72.png */; };
 		B6576D9715F5F434006BF24F /* bash144.png in Resources */ = {isa = PBXBuildFile; fileRef = B6576D9615F5F434006BF24F /* bash144.png */; };
@@ -19,21 +20,21 @@
 		B65A67ED15F5D05E0039318C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65A67EC15F5D05E0039318C /* ViewController.m */; };
 		B65A67F015F5D05E0039318C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B65A67EE15F5D05E0039318C /* ViewController.xib */; };
 		B65A67F715F5D1410039318C /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B65A67F615F5D1410039318C /* libxml2.dylib */; };
-		B65A67FA15F5D3610039318C /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B65A67F815F5D3610039318C /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B66E7F4415F5DF6F00D71B25 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = B66E7F4215F5DF6F00D71B25 /* NSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B66E7F4B15F5E06600D71B25 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = B66E7F4915F5E06600D71B25 /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B66E7F4D15F5E5B700D71B25 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B66E7F4C15F5E5B700D71B25 /* Ubuntu-Light.ttf */; };
 		B66E7F5315F5EE0800D71B25 /* bash.png in Resources */ = {isa = PBXBuildFile; fileRef = B66E7F5215F5EE0800D71B25 /* bash.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C067243F91C4545A0E4BBB6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		A15282C83FB149B28A5372F1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6576D8D15F5F384006BF24F /* bash57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bash57.png; path = ../bash57.png; sourceTree = "<group>"; };
 		B6576D9415F5F3DC006BF24F /* bash72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bash72.png; path = ../bash72.png; sourceTree = "<group>"; };
 		B6576D9615F5F434006BF24F /* bash144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bash144.png; sourceTree = SOURCE_ROOT; };
 		B65A67D515F5D05E0039318C /* tinyBash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tinyBash.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B65A67D915F5D05E0039318C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		B65A67DB15F5D05E0039318C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B65A67DD15F5D05E0039318C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B65A67D915F5D05E0039318C /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B65A67DB15F5D05E0039318C /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B65A67DD15F5D05E0039318C /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B65A67E115F5D05E0039318C /* tinyBash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tinyBash-Info.plist"; sourceTree = "<group>"; };
 		B65A67E315F5D05E0039318C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B65A67E515F5D05E0039318C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,11 +44,7 @@
 		B65A67EB15F5D05E0039318C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B65A67EC15F5D05E0039318C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B65A67EF15F5D05E0039318C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		B65A67F615F5D1410039318C /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
-		B65A67F815F5D3610039318C /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
-		B65A67F915F5D3610039318C /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
-		B66E7F4215F5DF6F00D71B25 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
-		B66E7F4315F5DF6F00D71B25 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		B65A67F615F5D1410039318C /* libxml2.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		B66E7F4915F5E06600D71B25 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
 		B66E7F4A15F5E06600D71B25 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
 		B66E7F4C15F5E5B700D71B25 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
@@ -63,6 +60,7 @@
 				B65A67DA15F5D05E0039318C /* UIKit.framework in Frameworks */,
 				B65A67DC15F5D05E0039318C /* Foundation.framework in Frameworks */,
 				B65A67DE15F5D05E0039318C /* CoreGraphics.framework in Frameworks */,
+				356BA182436B455ABE78C845 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +73,7 @@
 				B65A67DF15F5D05E0039318C /* tinyBash */,
 				B65A67D815F5D05E0039318C /* Frameworks */,
 				B65A67D615F5D05E0039318C /* Products */,
+				1C067243F91C4545A0E4BBB6 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +92,7 @@
 				B65A67D915F5D05E0039318C /* UIKit.framework */,
 				B65A67DB15F5D05E0039318C /* Foundation.framework */,
 				B65A67DD15F5D05E0039318C /* CoreGraphics.framework */,
+				A15282C83FB149B28A5372F1 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,10 +102,6 @@
 			children = (
 				B66E7F4915F5E06600D71B25 /* GTMNSString+HTML.m */,
 				B66E7F4A15F5E06600D71B25 /* GTMNSString+HTML.h */,
-				B66E7F4215F5DF6F00D71B25 /* NSString+HTML.m */,
-				B66E7F4315F5DF6F00D71B25 /* NSString+HTML.h */,
-				B65A67F815F5D3610039318C /* GDataXMLNode.m */,
-				B65A67F915F5D3610039318C /* GDataXMLNode.h */,
 				B65A67E815F5D05E0039318C /* AppDelegate.h */,
 				B65A67E915F5D05E0039318C /* AppDelegate.m */,
 				B65A67EB15F5D05E0039318C /* ViewController.h */,
@@ -142,6 +138,7 @@
 				B65A67D115F5D05E0039318C /* Sources */,
 				B65A67D215F5D05E0039318C /* Frameworks */,
 				B65A67D315F5D05E0039318C /* Resources */,
+				A1086DCD33AE4A2981B72FBF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,6 +192,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A1086DCD33AE4A2981B72FBF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B65A67D115F5D05E0039318C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -203,8 +217,6 @@
 				B65A67E615F5D05E0039318C /* main.m in Sources */,
 				B65A67EA15F5D05E0039318C /* AppDelegate.m in Sources */,
 				B65A67ED15F5D05E0039318C /* ViewController.m in Sources */,
-				B65A67FA15F5D3610039318C /* GDataXMLNode.m in Sources */,
-				B66E7F4415F5DF6F00D71B25 /* NSString+HTML.m in Sources */,
 				B66E7F4B15F5E06600D71B25 /* GTMNSString+HTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,13 +294,20 @@
 		};
 		B65A67F415F5D05E0039318C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C067243F91C4545A0E4BBB6 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tinyBash/tinyBash-Prefix.pch";
-				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				HEADER_SEARCH_PATHS = (
+					"/usr/include/libxml2/**",
+					"$(inherited)/**",
+				);
 				INFOPLIST_FILE = "tinyBash/tinyBash-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				OTHER_LDFLAGS = "-lxml2";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -297,13 +316,20 @@
 		};
 		B65A67F515F5D05E0039318C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C067243F91C4545A0E4BBB6 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tinyBash/tinyBash-Prefix.pch";
-				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				HEADER_SEARCH_PATHS = (
+					"/usr/include/libxml2/**",
+					"$(inherited)/**",
+				);
 				INFOPLIST_FILE = "tinyBash/tinyBash-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				OTHER_LDFLAGS = "-lxml2";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;

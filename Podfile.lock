@@ -1,0 +1,9 @@
+PODS:
+  - GDataXML-HTML (1.0.0)
+  - SVProgressHUD (0.7)
+  - SVPullToRefresh (0.3)
+
+DEPENDENCIES:
+  - GDataXML-HTML (= 1.0.0)
+  - SVProgressHUD (= 0.7)
+  - SVPullToRefresh (= 0.3)

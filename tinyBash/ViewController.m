@@ -32,6 +32,7 @@
 - (CGSize)sizeForText:(NSString*)text;
 - (UIFont*)labelFont;
 - (void)loadFailure;
+- (void)queueRefresh;
 
 @end
 
@@ -41,7 +42,11 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-  [self queueRefresh:nil];
+  ViewController *this = self;
+  [tableView addPullToRefreshWithActionHandler:^{
+    [this queueRefresh];
+  }];
+  [tableView.pullToRefreshView triggerRefresh];
 }
 
 - (void)viewDidUnload
@@ -54,10 +59,8 @@
   return interfaceOrientation == UIInterfaceOrientationPortrait;
 }
 
-- (void)queueRefresh:(id)sender
+- (void)queueRefresh
 {
-  navBar.topItem.title = @"loading";
-  refreshBtn.enabled = NO;
   NSOperationQueue *queue = [NSOperationQueue new];
   NSInvocationOperation *load = [[NSInvocationOperation alloc]
                                  initWithTarget:self
@@ -76,12 +79,6 @@
     [self loadFailure];
     return;
   }
-  GDataXMLNode *titleNode = [[doc.rootElement nodesForXPath:@"channel/title" error:&error] objectAtIndex:0];
-  if (error != nil) {
-    [self loadFailure];
-    return;
-  }
-  navBar.topItem.title = titleNode.stringValue;
   NSArray *itemNodes = [doc.rootElement nodesForXPath:@"channel/item/description" error:&error];
   if (error != nil) {
     [self loadFailure];
@@ -89,16 +86,15 @@
   }
   items = [NSMutableArray array];
   for (GDataXMLNode *descNode in itemNodes) {
-    [items addObject:descNode.stringValue.stringByDecodingHTMLEntities.brToNewline];
+    [items addObject:descNode.stringValue.gtm_stringByUnescapingFromHTML.brToNewline];
   }
-  refreshBtn.enabled = YES;
   [tableView reloadData];
-  [tableView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:YES];
+  [tableView.pullToRefreshView stopAnimating];
 }
 
 - (CGSize)sizeForText:(NSString *)text
 {
-  CGSize constraint = CGSizeMake(self.view.bounds.size.width - (TEXT_MARGIN * 2), 20000.0f);
+  CGSize constraint = CGSizeMake(tableView.bounds.size.width - (TEXT_MARGIN * 2), 20000.0f);
   CGSize size = [text sizeWithFont:self.labelFont
                  constrainedToSize:constraint
                      lineBreakMode:UILineBreakModeWordWrap];
@@ -118,16 +114,16 @@
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     label = [[UILabel alloc] initWithFrame:CGRectZero];
     label.lineBreakMode = UILineBreakModeWordWrap;
-    label.font = self.labelFont;
     label.numberOfLines = 0;
-    label.tag = 17;
+    label.font = self.labelFont;
+    label.tag = 1;
     [cell.contentView addSubview:label];
   } else {
-    label = (UILabel*) [cell viewWithTag:17];
+    label = (UILabel*) [cell viewWithTag:1];
   }
   NSString *text = [items objectAtIndex:indexPath.row];
   label.text = text;
-  [label setFrame:CGRectMake(TEXT_MARGIN, TEXT_MARGIN + CELL_MARGIN, self.view.bounds.size.width - TEXT_MARGIN * 2, [self sizeForText:text].height)];
+  [label setFrame:CGRectMake(TEXT_MARGIN, TEXT_MARGIN + CELL_MARGIN, tableView.bounds.size.width - TEXT_MARGIN * 2, [self sizeForText:text].height)];
   return cell;
 }
 
@@ -151,8 +147,8 @@
 
 - (void)loadFailure
 {
-  navBar.topItem.title = @"load failure";
-  refreshBtn.enabled = YES;
+  [tableView.pullToRefreshView stopAnimating];
+  [SVProgressHUD showErrorWithStatus:@"network error" duration:10.0f];
 }
 
 @end
