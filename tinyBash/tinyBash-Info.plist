@@ -18,6 +18,10 @@
 				<string>bash57.png</string>
 				<string>bash72.png</string>
 				<string>bash144.png</string>
+				<string>Icon-57.png</string>
+				<string>Icon-114.png</string>
+				<string>Icon-72.png</string>
+				<string>Icon-144.png</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
 			<true/>

@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		356BA182436B455ABE78C845 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A15282C83FB149B28A5372F1 /* libPods.a */; };
-		B6576D8E15F5F384006BF24F /* bash57.png in Resources */ = {isa = PBXBuildFile; fileRef = B6576D8D15F5F384006BF24F /* bash57.png */; };
-		B6576D9515F5F3DC006BF24F /* bash72.png in Resources */ = {isa = PBXBuildFile; fileRef = B6576D9415F5F3DC006BF24F /* bash72.png */; };
-		B6576D9715F5F434006BF24F /* bash144.png in Resources */ = {isa = PBXBuildFile; fileRef = B6576D9615F5F434006BF24F /* bash144.png */; };
 		B65A67DA15F5D05E0039318C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65A67D915F5D05E0039318C /* UIKit.framework */; };
 		B65A67DC15F5D05E0039318C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65A67DB15F5D05E0039318C /* Foundation.framework */; };
 		B65A67DE15F5D05E0039318C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65A67DD15F5D05E0039318C /* CoreGraphics.framework */; };
@@ -22,15 +19,15 @@
 		B65A67F715F5D1410039318C /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B65A67F615F5D1410039318C /* libxml2.dylib */; };
 		B66E7F4B15F5E06600D71B25 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = B66E7F4915F5E06600D71B25 /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B66E7F4D15F5E5B700D71B25 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B66E7F4C15F5E5B700D71B25 /* Ubuntu-Light.ttf */; };
-		B66E7F5315F5EE0800D71B25 /* bash.png in Resources */ = {isa = PBXBuildFile; fileRef = B66E7F5215F5EE0800D71B25 /* bash.png */; };
+		B6ACA82815F6267100E578EB /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = B6ACA82415F6267100E578EB /* Icon-72.png */; };
+		B6ACA82915F6267100E578EB /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = B6ACA82515F6267100E578EB /* Icon-57.png */; };
+		B6ACA82A15F6267100E578EB /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = B6ACA82615F6267100E578EB /* Icon-144.png */; };
+		B6ACA82B15F6267100E578EB /* Icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = B6ACA82715F6267100E578EB /* Icon-114.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C067243F91C4545A0E4BBB6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		A15282C83FB149B28A5372F1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6576D8D15F5F384006BF24F /* bash57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bash57.png; path = ../bash57.png; sourceTree = "<group>"; };
-		B6576D9415F5F3DC006BF24F /* bash72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bash72.png; path = ../bash72.png; sourceTree = "<group>"; };
-		B6576D9615F5F434006BF24F /* bash144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bash144.png; sourceTree = SOURCE_ROOT; };
 		B65A67D515F5D05E0039318C /* tinyBash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tinyBash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65A67D915F5D05E0039318C /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B65A67DB15F5D05E0039318C /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,7 +45,10 @@
 		B66E7F4915F5E06600D71B25 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
 		B66E7F4A15F5E06600D71B25 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
 		B66E7F4C15F5E5B700D71B25 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
-		B66E7F5215F5EE0800D71B25 /* bash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bash.png; path = ../bash.png; sourceTree = "<group>"; };
+		B6ACA82415F6267100E578EB /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = SOURCE_ROOT; };
+		B6ACA82515F6267100E578EB /* Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-57.png"; sourceTree = SOURCE_ROOT; };
+		B6ACA82615F6267100E578EB /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-144.png"; sourceTree = SOURCE_ROOT; };
+		B6ACA82715F6267100E578EB /* Icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-114.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +115,10 @@
 		B65A67E015F5D05E0039318C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B66E7F5215F5EE0800D71B25 /* bash.png */,
-				B6576D9415F5F3DC006BF24F /* bash72.png */,
-				B6576D8D15F5F384006BF24F /* bash57.png */,
-				B6576D9615F5F434006BF24F /* bash144.png */,
+				B6ACA82415F6267100E578EB /* Icon-72.png */,
+				B6ACA82515F6267100E578EB /* Icon-57.png */,
+				B6ACA82615F6267100E578EB /* Icon-144.png */,
+				B6ACA82715F6267100E578EB /* Icon-114.png */,
 				B66E7F4C15F5E5B700D71B25 /* Ubuntu-Light.ttf */,
 				B65A67E115F5D05E0039318C /* tinyBash-Info.plist */,
 				B65A67E215F5D05E0039318C /* InfoPlist.strings */,
@@ -183,10 +183,10 @@
 				B65A67E415F5D05E0039318C /* InfoPlist.strings in Resources */,
 				B65A67F015F5D05E0039318C /* ViewController.xib in Resources */,
 				B66E7F4D15F5E5B700D71B25 /* Ubuntu-Light.ttf in Resources */,
-				B66E7F5315F5EE0800D71B25 /* bash.png in Resources */,
-				B6576D8E15F5F384006BF24F /* bash57.png in Resources */,
-				B6576D9515F5F3DC006BF24F /* bash72.png in Resources */,
-				B6576D9715F5F434006BF24F /* bash144.png in Resources */,
+				B6ACA82815F6267100E578EB /* Icon-72.png in Resources */,
+				B6ACA82915F6267100E578EB /* Icon-57.png in Resources */,
+				B6ACA82A15F6267100E578EB /* Icon-144.png in Resources */,
+				B6ACA82B15F6267100E578EB /* Icon-114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
