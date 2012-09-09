@@ -19,4 +19,6 @@
   NSMutableArray *items;
 }
 
+- (IBAction)reloadData:(id)sender;
+
 @end

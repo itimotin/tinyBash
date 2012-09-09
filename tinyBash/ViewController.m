@@ -49,7 +49,7 @@
       [this fetchRss];
     });
   }];
-  [tableView.pullToRefreshView triggerRefresh];
+  [self reloadData:self];
 }
 
 - (void)viewDidUnload
@@ -146,6 +146,11 @@
                                           withAnimation:UIStatusBarAnimationNone];
   [tableView.pullToRefreshView stopAnimating];
   [SVProgressHUD showErrorWithStatus:@"network error" duration:10.0f];
+}
+
+- (void)reloadData:(id)sender
+{
+  [tableView.pullToRefreshView triggerRefresh];
 }
 
 @end

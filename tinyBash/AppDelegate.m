@@ -20,4 +20,9 @@
   return YES;
 }
 
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+  [self.viewController reloadData:self];
+}
+
 @end
